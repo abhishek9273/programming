@@ -1,0 +1,12 @@
+Volatile keyword in C :
+
+
+Interrupt and Interrupt handlers :
+
+Reentrancy and Interrupt Handlers
+Interrupt handlers in Linux need not be reentrant. When a given interrupt handler is executing, the corresponding interrupt line is masked out on all processors, preventing another
+interrupt on the same line from being received. Normally all other interrupts are enabled, so
+other interrupts are serviced, but the current line is always disabled. Consequently, the
+same interrupt handler is never invoked concurrently to service a nested interrupt. This
+greatly simplifies writing your interrupt handler.
+
