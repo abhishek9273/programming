@@ -11,6 +11,8 @@ void print_char_array(char c[10])
 int main(int argc, char **argv)
 {
 	char *in = argv[1];
-	print_char_array(in);	
+	char str[] = {"helloworld"};
+	printf("%d\n", sizeof (str));
+//	print_char_array(in);	
 	return 0;
 }

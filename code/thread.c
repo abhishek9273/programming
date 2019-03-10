@@ -38,9 +38,10 @@ int main(void)
 
 //	pthread_join(t1, &ret1);
 	//pthread_join(t2, &ret2);
-//	pthread_detach(t2);
+	pthread_detach(t2);
 
 	printf("Main thread returns\n");
-	pthread_exit(ret1);
+//	pthread_exit(ret1);
 	printf("Main thread returns\n");
+	return 0;
 }
